@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import { AllergyList } from "../components/allergies/AllergyList"
+import { AnnouncementList } from "../components/announcements/AnnouncementList"
 import { Login } from "../components/auth/Login"
 import { ParentRegister } from "../components/auth/ParentRegister"
 import { ChildForm } from "../components/children/ChildForm"
@@ -35,6 +36,7 @@ export const ParentViews = ({ token, setToken }) => {
             <Route path="/children/new" element={<ChildForm/>} />
             <Route path="/comments" element={<CommentList/>} />
             <Route path="/allergies" element={<AllergyList/>} />
+            <Route path="/home" element={<AnnouncementList/>} />
         </Routes>
   </>
 }

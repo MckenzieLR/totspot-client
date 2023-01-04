@@ -21,7 +21,7 @@ export const Login = () => {
                 if ("valid" in res && res.valid && "token" in res) {
                     localStorage.setItem("totuser", res.token);
                     localStorage.setItem("is_staff", res.staff)
-                    navigate("/")
+                    navigate("/home")
                 }
                 else {
                     invalidDialog.current.showModal()

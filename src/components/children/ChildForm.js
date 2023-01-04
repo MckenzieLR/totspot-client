@@ -160,7 +160,7 @@ export const ChildForm = () => {
         }}
         className="btn btn-primary"
       >
-        Create
+        Add Child
       </button>
     </form>
   );

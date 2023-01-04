@@ -1,6 +1,9 @@
 import { Route, Routes } from "react-router-dom"
 import { AllergyForm } from "../components/allergies/AllergyForm"
 import { AllergyList } from "../components/allergies/AllergyList"
+import { AnnouncementForm } from "../components/announcements/AnnouncementForm"
+import { AnnouncementList } from "../components/announcements/AnnouncementList"
+import { AnnouncementEdit } from "../components/announcements/UpdateAnnouncement"
 import { Login } from "../components/auth/Login"
 import { ProviderRegister } from "../components/auth/ProviderRegister"
 import { ChildDetails } from "../components/children/ChildrenDetails"
@@ -35,6 +38,9 @@ export const ProviderViews = ({ token, setToken }) => {
             <Route path="/comments/:commentId/edit" element={<CommentEdit/>} />
             <Route path="/allergies/new" element={<AllergyForm/>} />
             <Route path="/allergies" element={<AllergyList/>} />
+            <Route path="/announcements/new" element={<AnnouncementForm/>} />
+            <Route path="/home" element={<AnnouncementList/>} />
+            <Route path="/announcements/:announcementId/edit" element={<AnnouncementEdit/>} />
         </Routes>
   </>
 }

@@ -8,6 +8,9 @@ export const NavBar = () => {
                 (localStorage.getItem("totuser") !== null) ?
                 <>
                     <li className="nav-item">
+                    <Link className="nav-link" to="/home">Home</Link>
+                    </li>
+                    <li className="nav-item">
                     <Link className="nav-link" to="/posts">Posts</Link>
                     </li>
                     <li className="nav-item">
