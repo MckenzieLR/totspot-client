@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { getAllAllergies } from "../../managers/AllergyManager";
+import "./Allergies.css"
 
 export const AllergyList = () => {
   const [allergies, setAllergies] = useState([]);
@@ -16,8 +17,9 @@ export const AllergyList = () => {
 
   return (
     <>
-      <h1>Allergy List</h1>
-      <section className="allergies">
+      <h1 className="allergyHeader">Allergy List</h1>
+      <section>
+        <div className="allergies">
         {
             allergies.map(allergy => {
           return (
@@ -26,8 +28,9 @@ export const AllergyList = () => {
             </div>
           );
         })}
+        </div>
         <button
-          className="create_allergy"
+          className="create_allergy button-51"
           onClick={() => {
             navigate({ pathname: "/allergies/new" });
           }}

@@ -35,7 +35,7 @@ export const ChildForm = () => {
 
   return (
     <form className="childForm">
-      <h2 className="childForm__title">Create New Child</h2>
+      <h2 className="childForm__title">Add Child</h2>
 
       <fieldset>
         <div className="form-group">
@@ -158,7 +158,7 @@ export const ChildForm = () => {
           // Send POST request to your API
           createChild(child).then(() => navigate("/children"));
         }}
-        className="btn btn-primary"
+        className="btn btn-primary button-17 childButton"
       >
         Add Child
       </button>

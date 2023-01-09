@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Pacifico&family=Rancho&family=Shadows+Into+Light&display=swap|Shadows+Into+Light|Rancho");
+
+
+.child_list{
+    display: flex;
+    background-color: transparent;
+    border-radius: 12px;
+    color:  #000000;
+    font-family: Shadows Into Light;
+    font-size:larger;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    width: auto
+}
+
+.childForm {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 67%, 58%);
+    border: rgb(244, 212, 86) solid 3px;
+    border-radius: 12px;
+    color:  #FFFFFF;
+    font-family: Shadows Into Light;
+    letter-spacing: 3px;
+    font-size:xx-large;
+    align-items: center;
+    margin: 15px;
+    padding: 7px;
+}
+
+.child_section {
+    display: flex;
+    flex-direction: column;
+    background-color:#D5EDF6 ;
+    border:   #266DB6 solid 5px;
+    border-radius: 12px;
+    color:  #0f0e0e;
+    font-family: Shadows Into Light;
+    font-size:larger;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    width: 500px;
+}
+
+.childForm__title {
+    font-size: 3rem;
+    letter-spacing: 4px;
+}
+
+.form-control-content {
+    border-radius: 10px;
+    margin-left: 10px;
+    font-family: Rancho;
+    font-size: x-large;
+}
+
+.childButton {
+   display: flex;
+   align-items: center;
+   margin-bottom: 4px;
+   margin-left: 15px; 
+}
+
+.child {
+    display: flex;
+    flex-direction: column;
+    background-color: #266eb6;
+    border: #D5EDF6 solid 2px;
+    border-radius: 10px;
+    color:  #FFFFFF;
+    font-family: Shadows Into Light;
+    font-size:x-large;
+    letter-spacing: 2px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+    width: auto;
+}
+
+.childHeader {
+    display: flex;
+    flex-direction: row;
+    background: rgba(244, 212, 86, 0.875);
+    align-items: center;
+    justify-content:center;
+    font-family: Shadows Into Light;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 3rem;
+    width: 300px;
+    padding: 10px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    color: hsl(0, 67%, 58%);
+    text-shadow: 0 -1px 7px rgb(243, 239, 239), 0 -2px 10px hsl(0, 67%, 58%), 0 -10px 20px hsl(0, 37%, 89%), 0 -15px 40px hsl(0, 67%, 58%)
+}
+
+.child_body {
+    display: flex;
+    flex-direction: column;
+    background-color:transparent;
+    color:black;
+    font-family: Shadows Into Light;
+    font-size:x-large;
+    letter-spacing: 2px;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+    width: auto;
+}

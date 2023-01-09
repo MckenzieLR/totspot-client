@@ -1,0 +1,48 @@
+.form--login {
+    display: flex;
+    flex-direction: column;
+    background-color:  #2196f3;
+    border:  #D5EDF6 solid 5px;
+    border-radius: 12px;
+    color:  #FFFFFF;
+    font-family: Shadows Into Light;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+    font-size: x-large;
+    align-items: center;
+    padding: 5px;
+}
+
+/* .loginHeader {
+    font-family:Rancho;
+    font-size: 3rem;
+    padding: 15px;
+    color:#D5EDF6 ;
+    font-kerning: normal;
+text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #fff6f8, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+} */
+
+.form-control {
+    border-radius: 10px;
+    margin-left: 10px;
+    font-family: Rancho;
+    font-size: x-large;
+}
+
+.link--register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4px;
+    background-color:#D5EDF6 ;
+    border:   #266DB6 solid 5px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    border-radius: 12px;
+    color:black;
+    font-family: Shadows Into Light;
+}
+
+fieldset {
+    border: 0in;
+}

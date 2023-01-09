@@ -55,7 +55,7 @@ export const PostForm = () => {
                     createPost(post)
                         .then(() => navigate("/posts"))
                 }}
-                className="btn btn-primary">Create Post</button>
+                className="btn btn-primary button-17">Create Post</button>
         </form>
     )
 }

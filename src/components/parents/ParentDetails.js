@@ -24,9 +24,9 @@ export const ParentDetails = () => {
     if (totUser) {
     return (
         <>
-            <h1>Parent Details</h1>
+            <h1 className="parentHeader">Parent Details</h1>
             <section className="parent">
-                <h3 className="parent__name">Full Name: {parent.parent_name}</h3>
+                <h3 className="parent__name">Name: {parent.parent_name}</h3>
                 <div className="parent_number">Phone Number: {parent.phone_number}</div>
             
 
@@ -37,9 +37,9 @@ export const ParentDetails = () => {
 else {
     return (
         <>
-            <h1>Parent Details</h1>
+            <h1 className="parentHeader">Parent Details</h1>
             <section className="parent">
-                <h3 className="parent__name">Full Name: {parent.parent_name}</h3>
+                <h3 className="parent__name">Name: {parent.parent_name}</h3>
                 <div className="parent_number">Phone Number: {parent.phone_number}</div>
                 <button className = "create_child" onClick={() => {
                  navigate({ pathname: "/children/new" })

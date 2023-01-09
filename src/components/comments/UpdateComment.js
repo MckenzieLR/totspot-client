@@ -33,7 +33,7 @@ export const CommentEdit = () => {
     }
 
     return (
-        <form className="postForm">
+        <form className="commentForm">
             <h2 className="postForm__title">Edit Comment</h2>
 
             {/* TODO: create the rest of the input fields */}
@@ -60,7 +60,7 @@ export const CommentEdit = () => {
                     updateComment(comment)
                         .then(() => navigate("/comments"))
                 }}
-                className="btn btn-primary">Update Comment</button>
+                className="btn btn-primary button-17">Update Comment</button>
         </form>
     )
 }

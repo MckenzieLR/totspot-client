@@ -1,0 +1,203 @@
+
+
+/* CSS */
+.button-51 {
+  background-color: hsl(0, 67%, 58%);
+  border: 1px solid #266DB6;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #f8fbff;
+  font-family: "Avenir Next LT W01 Bold",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-51:hover,
+.button-51:active {
+  outline: 0;
+}
+
+.button-51:hover {
+  background-color: rgb(244, 212, 86);
+  cursor: pointer;
+}
+
+.button-51:before {
+  background-color: hsl(0, 67%, 58%);
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.button-51:hover:before {
+  background-color: hsl(0, 67%, 58%);
+}
+
+@media (min-width: 768px) {
+  .button-51 {
+    padding: 16px 32px;
+  }
+}
+
+
+/* CSS */
+.button-17 {
+  align-items: center;
+  appearance: none;
+  background-color: rgb(244, 212, 86);
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  color:#3c4043;
+  font-weight: 500;
+  height: 48px;
+  letter-spacing: .25px;
+  line-height: normal;
+  overflow: visible;
+  padding: 2px 20px;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
+}
+
+.button-17:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+.button-17:active {
+  box-shadow: 0 4px 4px 0 #266DB6, 0 8px 12px 6px #266DB6;
+  outline: none;
+}
+
+.button-17:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.button-17:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-17:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.button-17:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-17:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.button-17:disabled {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.announcement_body {
+    display: flex;
+    background-color: #2196f3;
+    border:  #D5EDF6 solid 5px;
+    border-radius: 12px;
+    color:  #FFFFFF;
+    font-family: Shadows Into Light;
+    font-size:larger;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    height: auto;
+}
+
+.announcement_section {
+    border: #D5EDF6 solid 1.5px;
+    border-radius: 7px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 2px;
+    padding: 5px;
+    height: auto;
+    text-align: center;
+}
+
+.create_announcement {
+    margin-left: 10px;
+}
+
+.announcementForm {
+    display: flex;
+    flex-direction: column;
+    background-color: #2196f3;
+    border: #D5EDF6 solid 5px;
+    border-radius: 12px;
+    color:  #FFFFFF;
+    font-family: Shadows Into Light;
+    font-size:xx-large;
+    align-items: center;
+    margin: 15px;
+    padding: 7px;
+}
+
+.announcementHeader {
+    display: flex;
+    flex-direction: row;
+    background: rgba(244, 212, 86, 0.875);
+    align-items: center;
+    justify-content: center;
+    font-family: Shadows Into Light;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 4.5rem;
+    padding: 5px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    color: hsl(0, 67%, 58%);
+    text-shadow: 0 -1px 7px rgb(243, 239, 239), 0 -2px 10px hsl(0, 67%, 58%), 0 -10px 20px hsl(0, 37%, 89%), 0 -15px 40px hsl(0, 67%, 58%)
+}
+
+.announcementSub {
+    display: flex;
+    flex-direction: row;
+    background: rgba(244, 212, 86, 0.875);
+    align-items: center;
+    justify-content:flex-start;
+    font-family: Shadows Into Light;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 2rem;
+    width: 400px;
+    padding: 10px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    color: hsl(0, 67%, 58%);
+    text-shadow: 0 -1px 7px rgb(243, 239, 239), 0 -2px 10px hsl(0, 67%, 58%), 0 -10px 20px hsl(0, 37%, 89%), 0 -15px 40px hsl(0, 67%, 58%)
+}
+
+.nav_image {
+    height: 200px;
+}

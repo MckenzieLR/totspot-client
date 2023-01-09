@@ -1,7 +1,7 @@
 import React, { useRef } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { loginUser } from "../../managers/AuthManager"
-
+import "./Login.css"
 
 
 export const Login = () => {
@@ -37,7 +37,7 @@ export const Login = () => {
             </dialog>
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Tot Spot</h1>
+                    <h1 className="loginHeader">Welcome to Tot Spot</h1>
                     <h2>Please sign in</h2>
                     <fieldset>
                         <label htmlFor="inputUsername"> Username address </label>
@@ -50,15 +50,15 @@ export const Login = () => {
                     <fieldset style={{
                         textAlign: "center"
                     }}>
-                        <button className="btn btn-1 btn-sep icon-send" type="submit">Sign In</button>
+                        <button className="btn btn-1 btn-sep icon-send button-17" type="submit">Sign In</button>
                     </fieldset>
                 </form>
             </section>
             <section className="link--register">
-                <Link to="/parentRegister">Register a Parent</Link>
+                New Parent? <Link to="/parentRegister">Register a Parent</Link>
             </section>
             <section className="link--register">
-                <Link to="/providerRegister">Register a Provider</Link>
+                New Provider? <Link to="/providerRegister">Register a Provider</Link>
             </section>
         </main>
     )

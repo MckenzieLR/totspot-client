@@ -1,10 +1,15 @@
 import { useEffect, useState } from "react"
-import { Link, useParams } from "react-router-dom"
+import { Link, useNavigate, useParams } from "react-router-dom"
 import { getAllParents } from "../../managers/ParentManager"
+import "./Parents.css"
 
 
 export const ParentList = () => {
     const [parents, setParents] = useState([])
+    const navigate = useNavigate()
+
+    const totSpotUser = localStorage.getItem("is_staff")
+    const totUser = JSON.parse(totSpotUser)
 
     
     
@@ -16,17 +21,37 @@ export const ParentList = () => {
         updateParentList()
     }, [])
 
-
+    if(totUser) {
     return <>
-        <h1>Parent List</h1>
+        <h1 className="parentHeader">Parent List</h1>
         <section className="parents">
             {
                 parents.map(parent => {
                     return <div className="parent">
-                        <h3 className="parent__name">Name: <Link to={`/parents/${parent.id}`}>{parent.parent_name}</Link></h3>
+                        <h3 className="parent_name"> Name:  <Link to={`/parents/${parent.id}`}>{parent.parent_name}</Link></h3>
                     </div>
                 })
             }
         </section>
     </>
+}
+
+    else {
+        return <>
+        <h1 className="parentHeader">My Details</h1>
+        <section className="parents">
+            {
+                parents.map(parent => {
+                    return <div className="parent">
+                        <h3 className="parent__name"> {parent.parent_name}</h3>
+                <div className="parent_number">Phone Number: {parent.phone_number}</div>
+                <button className = "create_child button-17" onClick={() => {
+                 navigate({ pathname: "/children/new" })
+                }}> Add a Child</button>
+                    </div>
+                })
+            }
+        </section>
+    </>
+    }
 }

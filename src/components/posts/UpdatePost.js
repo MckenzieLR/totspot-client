@@ -59,7 +59,7 @@ export const PostEdit = () => {
                     updatePost(post)
                         .then(() => navigate("/posts"))
                 }}
-                className="btn btn-primary">Update Post</button>
+                className="btn btn-primary button-17">Update Post</button>
         </form>
     )
 }

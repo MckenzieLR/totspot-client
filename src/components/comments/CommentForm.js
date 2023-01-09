@@ -58,7 +58,7 @@ export const CommentForm = () => {
                     createComment(comment)
                         .then(() => navigate("/comments"))
                 }}
-                className="btn btn-primary">Post Comment</button>
+                className="btn btn-primary button-17">Post Comment</button>
         </form>
     )
 }

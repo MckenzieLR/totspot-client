@@ -26,7 +26,7 @@ export const ChildDetails = () => {
 
     return (
         <>
-            <h1>Child Details</h1>
+            <h1 className="childHeader">Child Details</h1>
             <section className="child">
                 <h3 className="childName">Full Name: {child.first_name} {child.last_name}</h3>
             {

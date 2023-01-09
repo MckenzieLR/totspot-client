@@ -23,12 +23,12 @@ export const AnnouncementForm = () => {
   };
 
   return (
-    <form className="postForm">
+    <form className="announcementForm">
         <h2 className="postForm__title">Create New Announcement</h2>
         
         <fieldset>
             <div className="form-group">
-                <label htmlFor="content">Announcement Content: </label>
+                <label className="form-section" htmlFor="content">Announcement Content: </label>
                 <textarea type="text" className="form-control-content" name="content" id="content" required autoFocus defaultValue={currentAnnouncement.content}
                     onChange={changeAnnouncementState} />
             </div>
@@ -49,7 +49,7 @@ export const AnnouncementForm = () => {
                 createAnnouncement(announcement)
                     .then(() => navigate("/home"))
             }}
-            className="btn btn-primary">Create Announcement</button>
+            className="btn btn-primary button-17">Create Announcement</button>
     </form>
 )
 }

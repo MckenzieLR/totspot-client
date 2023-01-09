@@ -1,36 +1,40 @@
 import { Link, useNavigate } from "react-router-dom"
+import ABCblocks from "../imgs/ABCblocks.jpg"
+import borcelle from "../imgs/borcelle.png"
+import "./Nav.css"
+
 
 export const NavBar = () => {
     const navigate = useNavigate()
     return (
-        <ul className="navbar">
+        <div className="container blue circleBehind">
             {
                 (localStorage.getItem("totuser") !== null) ?
                 <>
-                    <li className="nav-item">
+                    <a className="nav-item">
                     <Link className="nav-link" to="/home">Home</Link>
-                    </li>
-                    <li className="nav-item">
+                    </a>
+                    <a className="nav-item">
                     <Link className="nav-link" to="/posts">Posts</Link>
-                    </li>
-                    <li className="nav-item">
-                    <Link className="nav-link" to="/parents">Parents</Link>
-                    </li>
-                    <li className="nav-item">
-                    <button className="nav-link fakeLink"
+                    </a>
+                    <a className="nav-item">
+                    <Link className="nav-link" to="/parents">Account</Link>
+                    </a>
+                    <a className="nav-item">
+                    <button className="nav-link fakeLink button-17 logoutButton"
                         onClick={() => {
                             localStorage.removeItem("totuser")
                             localStorage.removeItem("is_staff")
                             navigate('/login')
                         }}
-                    >Logout</button></li> 
+                    >Logout</button></a> 
                 </>
                 :
                     <>
-                        <li className="nav-item">
+                        <a className="nav-item ">
                             <Link className="nav-link" to="/login">Login</Link>
-                        </li>
+                        </a>
                     </>
-            }        </ul>
+            }        </div>
     )
 }

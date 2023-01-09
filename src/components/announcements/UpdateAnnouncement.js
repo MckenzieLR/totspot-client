@@ -59,7 +59,7 @@ export const AnnouncementEdit = () => {
                     editAnnouncement(announcement)
                         .then(() => navigate("/home"))
                 }}
-                className="btn btn-primary">Update Announcement</button>
+                className="btn btn-primary button-51">Update Announcement</button>
         </form>
     )
 }

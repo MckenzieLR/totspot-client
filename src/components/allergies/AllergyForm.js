@@ -33,14 +33,14 @@ export const AllergyForm = () => {
             
             <fieldset>
                 <div className="form-group">
-                    <label htmlFor="type">Type: </label>
+                    <label className="form-section" htmlFor="type">Type: </label>
                     <input type="text" className="form-control-content" name="type" id="type" required autoFocus defaultValue={currentAllergy.type}
                         onChange={changeAllergyState}/>
                 </div>
             </fieldset>
             
 
-            <button type="submit"
+            <button type="submit" 
                 onClick={evt => {
                     // Prevent form from being submitted
                     evt.preventDefault()
@@ -54,7 +54,7 @@ export const AllergyForm = () => {
                     createAllergy(allergy)
                         .then(() => navigate("/allergies"))
                 }}
-                className="btn btn-primary">Create Allergy</button>
+                className="btn btn-primary button-51">Create</button>
         </form>
     )
 }

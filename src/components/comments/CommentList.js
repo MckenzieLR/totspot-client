@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { Link, useNavigate} from "react-router-dom"
 import { deleteComment, getComments } from "../../managers/CommentManager"
-
+import "./Comments.css"
 
 export const CommentList = () => {
     const [comments, setComments] = useState([])
@@ -28,16 +28,16 @@ export const CommentList = () => {
             comments?.map(comment =>
                 
                 <tbody key={comment.id} >
-                    <tr>
-                        <td>Comment {comment.id}</td>
-                        <td>Provider: {comment?.user_name} </td>
-                        <td>{comment.content}</td>
-                        <td>Post: {comment.post}</td>
-                        <td><center><button className = "edit_post" onClick= {() => {
+                    <tr className="comment_body">
+                        <td className="comment_section">Comment {comment.id}</td>
+                        <td className="comment_section">{comment.content}</td>
+                        <td className="comment_section">Post: {comment.post}</td>
+                        <td className="comment_section">Provider: {comment?.user_name} </td>
+                        <td><center><button className = "commentButton edit_post button-17" onClick= {() => {
                             navigate({pathname: `/comments/${comment.id}/edit`})
                         }}>Edit</button></center></td>
 
-                        <td><center><button onClick ={evt => {
+                        <td><center><button className="button-17 commentButton" onClick ={evt => {
                             evt.preventDefault()
                             const commentDel = {
                                 id: parseInt(comment.id)
@@ -61,12 +61,11 @@ export const CommentList = () => {
             comments?.map(comment =>
                 
                 <tbody key={comment.id} >
-                    <tr>
-                        <td>Comment {comment.id}</td>
-                        <td>Provider: {comment?.user_name} </td>
-                        <td>{comment.content}</td>
-                        <td>Post: {comment.post}</td>
-                        
+                    <tr className="comment_body">
+                        <td className="comment_section">Comment {comment.id}</td>
+                        <td className="comment_section">{comment.content}</td>
+                        <td className="comment_section">Post: {comment.post}</td>
+                        <td className="comment_section">Provider: {comment?.user_name} </td>
                     </tr>
                 </tbody>
             )
