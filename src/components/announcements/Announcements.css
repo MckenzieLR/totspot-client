@@ -135,8 +135,6 @@
 }
 
 .announcement_section {
-    border: #D5EDF6 solid 1.5px;
-    border-radius: 7px;
     font-weight: bold;
     letter-spacing: 2px;
     margin: 2px;
@@ -147,6 +145,8 @@
 
 .create_announcement {
     margin-left: 10px;
+    border:  #D5EDF6 solid 5px;
+    border-radius: 12px;
 }
 
 .announcementForm {
@@ -166,7 +166,6 @@
 .announcementHeader {
     display: flex;
     flex-direction: row;
-    background: rgba(244, 212, 86, 0.875);
     align-items: center;
     justify-content: center;
     font-family: Shadows Into Light;
@@ -200,4 +199,32 @@
 
 .nav_image {
     height: 200px;
+}
+
+.announcement_number {
+    display: flex;
+    background-color: #37a1f8f7;
+    border:  #D5EDF6 solid 5px;
+    border-radius: 12px;
+    color:  #FFFFFF;
+    font-family: Shadows Into Light;
+    font-size:x-large;
+    font-weight:bolder;
+    justify-content: flex-start;
+    margin: 10px;
+    padding: 10px;
+    height: auto;
+    width: 200px
+}
+
+.announcement_date,
+.announcement_provider {
+    display: inline-flex;
+    padding: 5px;
+    color:rgb(244, 212, 86);
+}
+
+.edit_announcement,
+.delete_announcement {
+    margin-left: 5px;
 }

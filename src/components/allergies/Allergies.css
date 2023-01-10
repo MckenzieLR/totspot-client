@@ -2,10 +2,11 @@
     display: flex;
     flex-direction: column;
     background-color:#d5edf6 ;
-    border:   #266eb6 solid 5px;
+    border:   #2196f3 solid 5px;
     border-radius: 12px;
     color:  #0f0e0e;
     font-family: Shadows Into Light;
+    letter-spacing: 2px;
     font-size:larger;
     align-items: center;
     margin: 10px;
@@ -38,7 +39,7 @@
 .allergyForm {
     display: flex;
     flex-direction: column;
-    background-color: #266DB6;
+    background-color: #2196f3;
     border: #D5EDF6 solid 5px;
     border-radius: 12px;
     color:  #FFFFFF;

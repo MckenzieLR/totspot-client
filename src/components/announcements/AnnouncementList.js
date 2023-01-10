@@ -34,16 +34,16 @@ export const AnnouncementList = () => {
             announcements?.map(announcement =>
                 
                 <tbody key={announcement.id} >
+                    <div className="announcement_section announcement_number">Announcement #{announcement.id}</div>
                     <tr className="announcement_body">
-                        <td className="announcement_section">Announcement #{announcement.id}</td>
-                        <td className="announcement_section">{announcement.content}</td>
-                        <td className="announcement_section">Date: {announcement.date}</td>
-                        <td className="announcement_section">Provider: {announcement?.provider?.full_name} </td>
+                    <div className="partial_announcement"><div className="announcement_section">{announcement.content}</div></div>
+                        <td className="announcement_section"> <div className="announcement_date">Date: </div>{announcement.date}</td>
+                        <td className="announcement_section"> <div className="announcement_provider"> Provider: </div>{announcement?.provider?.full_name} </td>
                         <td><center><button className = "edit_announcement button-17" onClick= {() => {
                             navigate({pathname: `/announcements/${announcement.id}/edit`})
                         }}>Edit</button></center></td>
 
-                        <td><center><button className="button-17" onClick ={evt => {
+                        <td><center><button className="button-17 delete_announcement" onClick ={evt => {
                             evt.preventDefault()
                             const announcementDel = {
                                 id: parseInt(announcement.id)
@@ -76,11 +76,13 @@ export const AnnouncementList = () => {
             announcements?.map(announcement =>
                 
                 <tbody key={announcement.id} >
+                    <div className="announcement_section announcement_number">Announcement #{announcement.id}</div>
                     <tr className="announcement_body">
-                        <td className="announcement_section">Announcement {announcement.id}</td>
-                        <td className="announcement_section">{announcement.content}</td>
-                        <td className="announcement_section">Date: {announcement.date}</td>
-                        <td className="announcement_section">Provider: {announcement?.provider?.full_name} </td>
+                        <div className="partial_announcement">
+                        <div className="announcement_section">{announcement.content}</div>
+                        </div>
+                        <td className="announcement_section"><div className="announcement_date">Date: </div>{announcement.date}</td>
+                        <td className="announcement_section"> <div className="announcement_provider"> Provider: </div>{announcement?.provider?.full_name} </td>
                     </tr>
                 </tbody>
             )

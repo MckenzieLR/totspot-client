@@ -156,7 +156,7 @@ export const ChildForm = () => {
           };
 
           // Send POST request to your API
-          createChild(child).then(() => navigate("/children"));
+          createChild(child).then(() => navigate("/parents"));
         }}
         className="btn btn-primary button-17 childButton"
       >

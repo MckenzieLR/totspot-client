@@ -31,7 +31,7 @@
 }
 
 .post_comments {
-    margin: 50px;
+    margin: 15px;
 }
 
 .new_comment {
@@ -51,7 +51,6 @@
     color:  #FFFFFF;
     font-family: Shadows Into Light;
     font-size:larger;
-    justify-content: center;
     align-items: center;
     margin: 10px;
     padding: 10px;
@@ -59,8 +58,6 @@
 }
 
 .post_section {
-    display: flex;
-    justify-content: center;
     border-radius: 7px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -68,4 +65,20 @@
     padding: 5px;
     height: auto;
     text-align: center;
+}
+
+.post_number {
+    display: flex;
+    background-color: #37a1f8f7;
+    border:  #D5EDF6 solid 5px;
+    border-radius: 12px;
+    color:  #FFFFFF;
+    font-family: Shadows Into Light;
+    font-size:x-large;
+    font-weight:bolder;
+    justify-content: flex-start;
+    margin: 10px;
+    padding: 10px;
+    height: auto;
+    width: 200px
 }

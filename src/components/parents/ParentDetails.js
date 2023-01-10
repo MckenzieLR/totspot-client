@@ -41,7 +41,7 @@ else {
             <section className="parent">
                 <h3 className="parent__name">Name: {parent.parent_name}</h3>
                 <div className="parent_number">Phone Number: {parent.phone_number}</div>
-                <button className = "create_child" onClick={() => {
+                <button className = "create_child button-17" onClick={() => {
                  navigate({ pathname: "/children/new" })
                 }}> Add a Child</button>
 

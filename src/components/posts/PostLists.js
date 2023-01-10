@@ -29,15 +29,17 @@ export const PostList = () => {
         {
             posts?.map(post =>
                 
-                <tbody className="post_body" key={post.id} >
-                    <tr>
-                        <td className="post_section">Post {post.id}</td>
-                        <td className="post_section"> By: {post?.parent?.parent_name} </td>
+                <tbody key={post.id} >
+                    <div className="post_section post_number">Post {post.id}</div>
+                    <tr  className="post_body">
+                    <div className="partial_post">
                         <td className="post_section">{post.content}</td>
-                        <td className="post_section">{post.date}</td>
+                        <td className="post_section"><div className="announcement_date">Date: </div>{post.date}</td>
+                        <td className="post_section"><div className="announcement_provider"> By:</div>{post?.parent?.parent_name} </td>
                         <td><center><button className = "new_comment button-17" onClick= {() => {
                             navigate({pathname: `/comments/${post.id}/new`})
                         }}>Add a comment</button></center></td>
+                        </div>
                     </tr>
                 </tbody>
             )
@@ -55,12 +57,13 @@ export const PostList = () => {
     {
         posts?.map(post =>
             
-            <tbody className="post_body" key={post.id} >
-                <tr>
-                    <td className="post_section">Post {post.id}</td>
-                    <td className="post_section"> By: {post?.parent?.parent_name} </td>
-                    <td className="post_section">{post.content}</td>
-                    <td className="post_section">{post.date}</td>
+            <tbody key={post.id} >
+                    <div className="post_section post_number">Post {post.id}</div>
+                    <tr  className="post_body">
+                    <div className="partial_post">
+                        <td className="post_section">{post.content}</td>
+                        <td className="post_section"><div className="announcement_date">Date: </div>{post.date}</td>
+                        <td className="post_section"><div className="announcement_provider"> By:</div>{post?.parent?.parent_name} </td>
                     <td><center><button className = "edit_post button-17" onClick= {() => {
                         navigate({pathname: `/posts/${post.id}/edit`})
                     }}>Edit</button></center></td>
@@ -73,6 +76,7 @@ export const PostList = () => {
                         deletePost(postDel)
                         .then(() => updatePostList())
                     }}>Delete</button></center></td>
+                    </div>
                 </tr>
             </tbody>
         )
