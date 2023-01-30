@@ -64,11 +64,13 @@ export const CommentList = () => {
             comments?.map(comment =>
                 
                 <tbody key={comment.id} >
+                    <div className="comment_section comment_number">Comment {comment.id}</div>
                     <tr className="comment_body">
-                        <td className="comment_section">Comment {comment.id}</td>
+                        <div className="partial_comment">
                         <td className="comment_section">{comment.content}</td>
-                        <td className="comment_section">Post: {comment.post}</td>
-                        <td className="comment_section">Provider: {comment?.user_name} </td>
+                        </div>
+                        <td className="comment_section"><div className="post_comment">Post: </div>{comment.post}</td>
+                        <td className="comment_section"><div className="post_provider">Provider:</div>{comment?.user_name} </td>
                     </tr>
                 </tbody>
             )

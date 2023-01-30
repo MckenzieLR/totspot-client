@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react"
 import { Link, useNavigate, useParams } from "react-router-dom"
 import { getAllParents } from "../../managers/ParentManager"
+import { getAllChildren } from "../../managers/ChildManager"
 import "./Parents.css"
 
 
 export const ParentList = () => {
     const [parents, setParents] = useState([])
+
     const navigate = useNavigate()
 
     const totSpotUser = localStorage.getItem("is_staff")
@@ -17,9 +19,14 @@ export const ParentList = () => {
         getAllParents().then(setParents)
     }
 
+  
+
+
     useEffect(() => {
         updateParentList()
     }, [])
+
+    
 
     if(totUser) {
     return <>
@@ -55,3 +62,28 @@ export const ParentList = () => {
     </>
     }
 }
+
+// const [children, setChildren] = useState([])
+
+
+// const checkChildren = () => {
+//     getAllChildren().then(setChildren)
+// }
+
+// useEffect(() => {
+//     checkChildren()
+// }, [])
+
+// <h3 className="parent_children">My Child(ren)</h3>
+//         <section className="children">
+//             {
+//                 parents.map(parent => {
+//                     children.map(child => {
+//                     if (child?.parent?.id == parent?.id)
+//                     return <div className="child">
+//                         <Link to={`/children/${child.id}`}>{child.first_name} {child.last_name}</Link>
+//                     </div>
+//                     })
+//                 })
+//             }
+//         </section>
